@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+	
+	<Appenders>
+		<Console name="Console" target="SYSTEM_OUT">
+			<ThresholdFilter level="trace" onMatch="ACCEPT" onMismatch="DENY"/>    
+	    	<PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+	    </Console>
+	    <RollingFile name="upateLog" fileName="logs/appUpdate.log" filePattern="logs/$${date:yyyy-MM}/app-%d{MM-dd-yyyy}-%i.log.gz">    
+	      	 <ThresholdFilter level="debug" onMatch="ACCEPT" onMismatch="DENY"/>  
+	      	<PatternLayout pattern="%d{yyyy.MM.dd 'at' HH:mm:ss z} %-5level %class{36} %L %M - %msg%xEx%n"/>    
+	      	<SizeBasedTriggeringPolicy size="5 MB" />     
+	    </RollingFile>    
+    
+    
+  </Appenders>
+  
+   <Loggers>
+    <Logger name="com.favccxx.favsoft.deltarelease.PublishService" level="trace">
+      <AppenderRef ref="Console"/>
+    </Logger>
+    <root level="trace">    
+      <appender-ref ref="Console"/>
+      <appender-ref ref="upateLog"/>     
+    </root> 
+  </Loggers>
+ 
+</Configuration>

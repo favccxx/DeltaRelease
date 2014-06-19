@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<apps default="favsoft" patchFolder="d:/favsoft/patchFolder">
+		<app appName="deltaRelease" patchFile="deltaReleaseFile.txt">
+			<patch_source_dir>
+				E:\work\simens\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp2\webapps\DeltaRelease
+			</patch_source_dir>
+			<patch_dest_dir>
+				/opt/apache-tomcat-7.0.28/webapps/DeltaRelease
+			</patch_dest_dir>
+		</app>
+	</apps>
+</config>

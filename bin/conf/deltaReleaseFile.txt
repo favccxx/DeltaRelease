@@ -1,0 +1,10 @@
+/com/siemens/ct/its/btmp/action/LoginAction.java
+/com/siemens/ct/its/btmp/common/util/CredUtil.java
+/com/siemens/ct/its/btmp/mongodb/ext/DataStoreFactoryBean.java
+/com/siemens/ct/its/btmp/smmcportal/filter/ServerFilter.java
+/WEB-INF/classes/struts.xml
+/WEB-INF/web.xml
+
+
+/com/siemens/ct/its/btmp/common/interceptor/LoginInterceptor.java
+/com/siemens/ct/its/btmp/common/util/Consts.java

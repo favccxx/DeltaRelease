@@ -1,0 +1,2 @@
+2014.06.19 at 14:57:58 CST ERROR com.favccxx.favsoft.deltarelease.PublishService 25 getDeltaReleaseFiles - error test
+2014.06.19 at 14:57:58 CST FATAL com.favccxx.favsoft.deltarelease.PublishService 26 getDeltaReleaseFiles - fatal test
